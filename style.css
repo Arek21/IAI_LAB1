@@ -1,0 +1,7 @@
+body { background-color: gold; }
+
+<style>
+   li {
+      display: flex;
+   }
+</style>
