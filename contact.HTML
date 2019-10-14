@@ -5,101 +5,127 @@
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <meta charset="UTF-8">
-
-    <title>
-        Tytul
-    </title>
-
-
+    <title> Moja strona </title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
 <body>
-<ul class="nav">
+
+
+<ul class="nav justify-content-center">
     <li class="nav-item">
-        <a class="nav-link active"target="_blank" href="index.html">Home </a>
+        <a class="nav-link active" target="_blank" href="index.html"> Home </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link"target="_blank" href="contact.html">Blog</a>
+        <a class="nav-link active" target="_blank" href="contact.html"> Blog </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link"target="_blank" href="#">Quiz</a>
+        <a class="nav-link active" target="_blank" href="index.html"> Quiz </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link"target="_blank" href="#">Kontakt</a>
+        <a class="nav-link active" target="_blank" href="index.html"> Kontakt </a>
     </li>
 </ul>
 
 
-
 <div class="container">
     <form>
-        <div class="form-group">
-            <label for="Imie">Imie</label>
-            <input type="Imie" class="form-control" id="Imie" aria-describedby="Imie" placeholder="Podaj imie">
+        <h3> Uzupełnij dane:<br><br></h3>
+
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Podaj imię">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Podaj nazwisko">
+            </div>
         </div>
 
         <div class="form-group">
-            <label for="Nazwisko">Nazwisko</label>
-            <input type="Nazwisko" class="form-control" id="Nazwisko" aria-describedby="Nazwisko"
-                   placeholder="Podaj nazwisko">
-        </div>
-
-        <div class="form-group">
-            <label for="exampleInputEmail1">Adres email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                   placeholder="Podaj email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label for="email" class="col-sm-2 col-form-label"> </label>
+            <div class="col-sm-20">
+                <input type="email" class="form-control" id="email" placeholder="Podaj email">
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-2 col-form-label"> </label>
+                <div class="col-sm-20">
+                    <input type="password" class="form-control" id="password" placeholder="Podaj hasło">
+                </div>
+            </div>
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Kobieta"
-                   checked>
-            <label class="form-check-label" for="exampleRadios1">
-                Kobieta
-            </label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="M�czyzna">
-            <label class="form-check-label" for="exampleRadios2">
-                Mezczyzna
-            </label>
+            <input class="form-check-input" type="radio" name="sex" id="Radios1" value="Kobieta" checked>
+            <label class="form-check-label" for="Radios1">Kobieta</label>
+            <br>
+            <input class="form-check-input" type="radio" name="sex" id="Radios2" value="Mężczyzna">
+            <label class="form-check-label" for="Radios2">Mężczyzna</label>
         </div>
 
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">Opis</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="textarea"> </label>
+            <textarea class="form-control" id="textarea" rows="3" placeholder="Opowiedz coś o sobie..."></textarea>
         </div>
-
-        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Wiek</label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Wybierz wiek</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        </select>
-
-        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Stan cywilny</label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Panna/Kawaler</option>
-            <option value="1">Panna</option>
-            <option value="2">Kawaler</option>
-        </select>
 
         <div>
-            <input type="reset" value="Wyczysc"/>
+            <select class="custom-select my-1 mr-sm-2" id="select">
+                <option selected>Wybierz rocznik</option>
+                <option value="0">'90</option>
+                <option value="1">'91</option>
+                <option value="2">'92</option>
+                <option value="3">'93</option>
+                <option value="4">'94</option>
+                <option value="5">'95</option>
+                <option value="6">'96</option>
+                <option value="7">'97</option>
+                <option value="8">'98</option>
+                <option value="9">'99</option>
+                <option value="10">'00</option>
+                <option value="11">'01</option>
+                <option value="12">'02</option>
+                <option value="13">'03</option>
+                <option value="14">'04</option>
+                <option value="15">'05</option>
+                <option value="16">'06</option>
+                <option value="17">'07</option>
+                <option value="18">'08</option>
+                <option value="19">'09</option>
+                <option value="20">'10</option>
+                <option value="21">'11</option>
+                <option value="22">'12</option>
+                <option value="23">'13</option>
+            </select>
+        </div>
+
+        <div>
+            <select class="custom-select my-1 mr-sm-2" id="select2">
+                <option selected>Stan cywilny</option>
+                <option value="1">Panna</option>
+                <option value="2">Kawaler</option>
+                <option value="3">Żona</option>
+                <option value="4">Mąż</option>
+                <option value="3">Wdowa</option>
+                <option value="4">Wdowiec</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset" value="Wyczyść"/>
             <input type="submit" value="Wyslij">
         </div>
     </form>
 </div>
+
+<style>
+   li {
+      display: block;
+      background-color: #2ECC71;
+   }
+</style>
+
 </body>
-
-
 </html>
